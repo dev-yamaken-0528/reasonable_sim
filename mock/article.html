@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>格安SIM - 記事詳細</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+  <style type="text/css">
+    body {
+      /*
+      font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, "ヒラギノ角ゴ ProN W3", Hiragino Kaku Gothic ProN, Arial, "メイリオ", Meiryo, sans-serif;
+      */
+      font-family:"ヒラギノ丸ゴ Pro W4","ヒラギノ丸ゴ Pro","Hiragino Maru Gothic Pro","ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","HG丸ｺﾞｼｯｸM-PRO","HGMaruGothicMPRO";
+      display: flex;
+      min-height: 100vh;
+      flex-direction: column;
+    }
+    main {
+      flex: 1 0 auto;
+    }
+    .btn {
+      margin: 5px 5px 5px 5px;
+    }
+    .card-items {
+      width: 300px;
+      margin: 5px 5px 5px 5px;
+    }
+    .items {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  </style>
+</head>
+<body>
+
+  <div id="app">
+
+    <!-- ヘッダ -->
+    <header>
+
+      <!-- ナビ -->
+      <div class="container">
+        <nav class="grey darken-4">
+          <div class="nav-wrapper">
+            <a href="index.html" class="brand-logo">格安SIM</a>
+            <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+            <ul class="right hide-on-med-and-down">
+              <li><a href="articles.html">記事一覧</a></li>
+              <li><a href="items.html">商品一覧</a></li>
+            </ul>
+          </div>
+        </nav>
+        <ul class="sidenav" id="mobile-demo">
+          <li><a href="articles.html">記事一覧</a></li>
+          <li><a href="items.html">商品一覧</a></li>
+        </ul>
+      </div>
+
+      <div class="container">
+        <nav class="grey darken-4">
+          <div class="nav-wrapper">
+            <a href="index.html" class="breadcrumb">トップ</a>
+            <a href="articles.html" class="breadcrumb">記事一覧</a>
+            <a href="articles.html" class="breadcrumb">カテゴリ or タグ</a>
+            <a href="article.html" class="breadcrumb">記事</a>
+          </div>
+        </nav>
+      </div>
+
+    </header>
+
+    <!-- コンテンツ -->
+    <main>
+      <div class="container">
+        <div class="row">
+          <!-- コンテンツ メイン 左 -->
+          <div class="col s12 m8 l9">
+
+            <h2>記事詳細</h2>
+
+            <p v-for="n in 50">
+            ああああああああああいいいいいいいいいいううううううううううええええええええええおおおおおおおおおお
+            </p>
+
+          </div>
+
+          <!-- コンテンツ サブ 右 -->
+          <div class="col s12 m4 l3">
+            <h3 class="grey darken-4 white-text">商品</h3>
+            <h4>カテゴリ</h4>
+            <a v-for="n in 5" href="items.html" class="btn grey darken-4 white-text">XXX</a>
+            <h4>タグ</h4>
+            <a v-for="n in 5" href="items.html" class="btn grey darken-4 white-text">XXX</a>
+            <h3 class="grey darken-4 white-text">記事</h3>
+            <h4>カテゴリ</h4>
+            <a v-for="n in 5" href="articles.html" class="btn grey darken-4 white-text">XXX</a>
+            <h4>タグ</h4>
+            <a v-for="n in 5" href="articles.html" class="btn grey darken-4 white-text">XXX</a>
+          </div>
+
+        </div>
+      </div>
+    </main>
+
+    <!-- フッタ -->
+    <footer>
+      <div class="container">
+        <div class="page-footer grey darken-4">
+          <div class="row">
+            <div class="col l6 s12">
+              <h5 class="white-text">Footer Content</h5>
+              <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+            </div>
+            <div class="col l4 offset-l2 s12">
+              <h5 class="white-text">Links</h5>
+              <ul>
+                <li><a href="articles.html">記事一覧</a></li>
+                <li><a href="items.html">商品一覧</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer-copyright">
+            c 2018 Copyright 格安SIM
+          </div>
+        </div>
+      </div>
+    </footer>
+
+  </div>
+
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+  $('.sidenav').sidenav();
+  $('.slider').slider({height:300, interval:2000});
+});
+
+var app = new Vue({
+  el: '#app',
+  data: {
+    captions: [
+      {src:'./img/noimage_200_200.jpg', class:'caption center-align', main:'メインキャプション', sub: 'サブキャプション' },
+      {src:'./img/noimage_200_200.jpg', class:'caption left-align',   main:'メインキャプション', sub: 'サブキャプション' },
+      {src:'./img/noimage_200_200.jpg', class:'caption right-align',  main:'メインキャプション', sub: 'サブキャプション' }
+    ]
+  },
+  methods: {
+    fnc_methods: function(){
+      console.log('call methods');
+    }
+  },
+  computed: {
+    fnc_computed: function(){
+      console.log('call computed');
+    }
+  }
+})
+
+</script>
+</html>
