@@ -2,37 +2,13 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
-  <title>格安SIM - 記事一覧</title>
+  <title>格安SIM - 記事詳細</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
-  <style type="text/css">
-    body {
-      /*
-      font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, "ヒラギノ角ゴ ProN W3", Hiragino Kaku Gothic ProN, Arial, "メイリオ", Meiryo, sans-serif;
-      */
-      font-family:"ヒラギノ丸ゴ Pro W4","ヒラギノ丸ゴ Pro","Hiragino Maru Gothic Pro","ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","HG丸ｺﾞｼｯｸM-PRO","HGMaruGothicMPRO";
-      display: flex;
-      min-height: 100vh;
-      flex-direction: column;
-    }
-    main {
-      flex: 1 0 auto;
-    }
-    .btn {
-      margin: 5px 5px 5px 5px;
-    }
-    .card-items {
-      width: 300px;
-      margin: 5px 5px 5px 5px;
-    }
-    .items {
-      display: flex;
-      flex-wrap: wrap;
-    }
-  </style>
+  <link rel="stylesheet" href="../css/common.css">
 </head>
-<body>
+<body class="blue-grey lighten-5">
 
   <div id="app">
 
@@ -62,7 +38,7 @@
           <div class="nav-wrapper">
             <a href="index.html" class="breadcrumb">トップ</a>
             <a href="articles.html" class="breadcrumb">記事一覧</a>
-            <a href="articles.html" class="breadcrumb">カテゴリ or タグ</a>
+            <a href="article.html" class="breadcrumb">記事</a>
           </div>
         </nav>
       </div>
@@ -73,33 +49,26 @@
     <main>
       <div class="container">
         <div class="row">
+
           <!-- コンテンツ メイン 左 -->
-          <div class="col s12 m8 l9">
-
-            <h2>記事一覧</h2>
-            <div class="showlist">
-              <div v-for="n in 30" class="card hoverable">
-                <a href="article.html">
-                  <div class="card-content">
-                    <span class="card-title">記事タイトル</span>
-                  </div>
-                </a>
-              </div>
-            </div>
-
+          <div class="col s12 m8 l9 white">
+            <h2>記事タイトル</h2>
+            <p v-for="n in 25">
+            ああああああああああいいいいいいいいいいううううううううううええええええええええおおおおおおおおおお
+            </p>
           </div>
 
           <!-- コンテンツ サブ 右 -->
           <div class="col s12 m4 l3">
-            <h3 class="grey darken-4 white-text">商品</h3>
-            <h4>カテゴリ</h4>
+            <h3>商品</h3>
+            <p>カテゴリ</p>
             <a v-for="n in 5" href="items.html" class="btn grey darken-4 white-text">XXX</a>
-            <h4>タグ</h4>
+            <p>タグ</p>
             <a v-for="n in 5" href="items.html" class="btn grey darken-4 white-text">XXX</a>
-            <h3 class="grey darken-4 white-text">記事</h3>
-            <h4>カテゴリ</h4>
+            <h3>記事</h3>
+            <p>カテゴリ</p>
             <a v-for="n in 5" href="articles.html" class="btn grey darken-4 white-text">XXX</a>
-            <h4>タグ</h4>
+            <p>タグ</p>
             <a v-for="n in 5" href="articles.html" class="btn grey darken-4 white-text">XXX</a>
           </div>
 
@@ -140,17 +109,11 @@
 <script type="text/javascript">
 $(document).ready(function(){
   $('.sidenav').sidenav();
-  $('.slider').slider({height:300, interval:2000});
 });
 
 var app = new Vue({
   el: '#app',
   data: {
-    captions: [
-      {src:'./img/noimage_200_200.jpg', class:'caption center-align', main:'メインキャプション', sub: 'サブキャプション' },
-      {src:'./img/noimage_200_200.jpg', class:'caption left-align',   main:'メインキャプション', sub: 'サブキャプション' },
-      {src:'./img/noimage_200_200.jpg', class:'caption right-align',  main:'メインキャプション', sub: 'サブキャプション' }
-    ]
   },
   methods: {
     fnc_methods: function(){
