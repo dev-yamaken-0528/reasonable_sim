@@ -51,16 +51,15 @@
 
           <!-- コンテンツ メイン 左 -->
           <div class="col s12 m8 l9">
-
-            <div class="showlist">
-              <div v-for="n in 10" class="card hoverable">
-                <a href="article.html">
-                  <div class="card-content">
-                    <span class="card-title">記事タイトル</span>
+            <a v-for="n in 10" href="article.html">
+              <div class="card hoverable horizontal">
+                  <img src="../imgs/sample_01.jpg" style="width:150px;">
+                  <div class="card-content black-text">
+                    <p>タイトル</p>
+                    <p>本文見出し</p>
                   </div>
-                </a>
               </div>
-            </div>
+            </a>
 
             <ul class="pagination center">
               <li class="disabled"><a href="#!"><i class="material-icons">chevron_left</i></a></li>
