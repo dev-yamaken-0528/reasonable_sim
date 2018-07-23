@@ -8,47 +8,62 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
   <link rel="stylesheet" href="../css/common.css">
 </head>
-<body class="blue-grey lighten-5">
+<body class="grey lighten-5">
 
   <div id="app">
 
     <!-- ヘッダ -->
     <header>
+      <div>
+        <img src="../imgs/sample_01.jpg" width="100%" height="256px" alt="">
+      </div>
+    </header>
 
-      <!-- ナビ -->
-      <div class="container">
-        <nav class="grey darken-4">
-          <div class="nav-wrapper">
-            <a href="index.html" class="brand-logo">格安SIM</a>
-            <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-            <ul class="right hide-on-med-and-down">
-              <li><a href="articles.html">記事一覧</a></li>
-              <li><a href="items.html">商品一覧</a></li>
-            </ul>
-          </div>
-        </nav>
-        <ul class="sidenav" id="mobile-demo">
-          <li><a href="articles.html">記事一覧</a></li>
-          <li><a href="items.html">商品一覧</a></li>
+    <!-- ナビ デスクトップ -->
+    <nav class="fixed-top">
+      <div class="nav-wrapper">
+        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        <ul class="show-on-large">
+          <li class="nav-ul-li"><a href="items.html">ドコモ</a></li>
+          <li class="nav-ul-li"><a href="items.html">au</a></li>
+          <li class="nav-ul-li"><a href="items.html">ソフトバンク</a></li>
+          <li class="nav-ul-li"><a href="items.html">LINEモバイル</a></li>
+          <li class="nav-ul-li"><a href="items.html">ワイモバイル</a></li>
+          <li class="nav-ul-li"><a href="items.html">UQ mobile</a></li>
+          <li class="nav-ul-li"><a href="items.html">U-mobile</a></li>
+          <li class="nav-ul-li"><a href="items.html">IIJmio</a></li>
+          <li class="nav-ul-li"><a href="items.html">mineo</a></li>
+          <li class="nav-ul-li"><a href="items.html">nuroモバイル</a></li>
+          <li class="nav-ul-li"><a href="items.html">BIGLOBE</a></li>
+          <li class="nav-ul-li"><a href="items.html">NifMo</a></li>
+          <li class="nav-ul-li"><a href="items.html">b-mobile</a></li>
+          <li class="nav-ul-li"><a href="items.html">OCN モバイル ONE</a></li>
+        </ul>
+        <ul class="hide-on-large-only">
+          <li class="nav-ul-li"><a href="items.html">ドコモ</a></li>
+          <li class="nav-ul-li"><a href="items.html">au</a></li>
+          <li class="nav-ul-li"><a href="items.html">ソフトバンク</a></li>
         </ul>
       </div>
+    </nav>
+    <!-- ナビ スマホ -->
+    <ul class="sidenav" id="mobile-demo">
+      <li class="nav-ul-li"><a href="items.html">ドコモ</a></li>
+      <li class="nav-ul-li"><a href="items.html">au</a></li>
+      <li class="nav-ul-li"><a href="items.html">ソフトバンク</a></li>
+      <li class="nav-ul-li"><a href="items.html">LINEモバイル</a></li>
+      <li class="nav-ul-li"><a href="items.html">ワイモバイル</a></li>
+      <li class="nav-ul-li"><a href="items.html">UQ mobile</a></li>
+      <li class="nav-ul-li"><a href="items.html">U-mobile</a></li>
+      <li class="nav-ul-li"><a href="items.html">IIJmio</a></li>
+      <li class="nav-ul-li"><a href="items.html">mineo</a></li>
+      <li class="nav-ul-li"><a href="items.html">nuroモバイル</a></li>
+      <li class="nav-ul-li"><a href="items.html">BIGLOBE</a></li>
+      <li class="nav-ul-li"><a href="items.html">NifMo</a></li>
+      <li class="nav-ul-li"><a href="items.html">b-mobile</a></li>
+      <li class="nav-ul-li"><a href="items.html">OCN モバイル ONE</a></li>
+    </ul>
 
-      <!-- ヘッダイメージ -->
-      <div class="container">
-        <div class="slider">
-          <ul class="slides">
-            <li v-for="caption in captions">
-              <img :src="caption.src">
-              <div :class="caption.class">
-                <h3 class="black-text">{{ caption.main }}</h3>
-                <h5 class="black-text">{{ caption.sub }}</h5>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </div>
-
-    </header>
 
     <!-- コンテンツ -->
     <main>
@@ -56,67 +71,11 @@
         <div class="row">
           <!-- コンテンツ メイン 左 -->
           <div class="col s12 m8 l9">
-
-            <h2>新着商品</h2>
-            <a v-for="n in 3" href="item.html">
-              <div class="card hoverable horizontal">
-                  <img src="../imgs/sample_01.jpg" style="width:150px; height:100px;">
-                  <div class="card-content black-text">
-                    <p>タイトル</p>
-                    <p>本文見出し</p>
-                  </div>
-              </div>
-            </a>
-
-            <h2>おすすめ商品</h2>
-            <a v-for="n in 3" href="item.html">
-              <div class="card hoverable horizontal">
-                  <img src="../imgs/sample_01.jpg" style="width:150px; height:100px;">
-                  <div class="card-content black-text">
-                    <p>タイトル</p>
-                    <p>本文見出し</p>
-                  </div>
-              </div>
-            </a>
-
-            <h2>新着記事</h2>
-            <a v-for="n in 3" href="article.html">
-              <div class="card hoverable horizontal">
-                  <img src="../imgs/sample_01.jpg" style="width:150px; height:100px;">
-                  <div class="card-content black-text">
-                    <p>タイトル</p>
-                    <p>本文見出し</p>
-                  </div>
-              </div>
-            </a>
-
-            <h2>おすすめ記事</h2>
-            <a v-for="n in 3" href="article.html">
-              <div class="card hoverable horizontal">
-                  <img src="../imgs/sample_01.jpg" style="width:150px; height:100px;">
-                  <div class="card-content black-text">
-                    <p>タイトル</p>
-                    <p>本文見出し</p>
-                  </div>
-              </div>
-            </a>
-
+            <p v-for="n in 30">XXXXXXXXXX</p>
           </div>
-
           <!-- コンテンツ サブ 右 -->
           <div class="col s12 m4 l3">
-            <h3>商品</h3>
-            <p>カテゴリ</p>
-            <a v-for="n in 5" href="items.html" class="btn grey darken-4 white-text">XXX</a>
-            <p>タグ</p>
-            <a v-for="n in 5" href="items.html" class="btn grey darken-4 white-text">XXX</a>
-            <h3>記事</h3>
-            <p>カテゴリ</p>
-            <a v-for="n in 5" href="articles.html" class="btn grey darken-4 white-text">XXX</a>
-            <p>タグ</p>
-            <a v-for="n in 5" href="articles.html" class="btn grey darken-4 white-text">XXX</a>
           </div>
-
         </div>
       </div>
     </main>
@@ -127,33 +86,12 @@
         <div class="page-footer grey darken-4">
           <div class="row">
             <div class="col l6 s12">
-              <h5 class="white-text">Footer Content</h5>
-              <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+              <p class="grey-text text-lighten-4">&copy; 2018 格安SIM</p>
             </div>
-            <div class="col l4 offset-l2 s12">
-              <h5 class="white-text">Links</h5>
-              <ul>
-                <li><a href="articles.html">記事一覧</a></li>
-                <li><a href="items.html">商品一覧</a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="footer-copyright">
-            c 2018 Copyright 格安SIM
           </div>
         </div>
       </div>
     </footer>
-
-    <!-- 固定ナビ(フッタ) -->
-    <nav class="grey darken-4 fixed-bottom hide-on-large-only">
-      <div class="nav-wrapper">
-        <ul>
-          <li><a href="articles.html">記事一覧</a></li>
-          <li><a href="items.html">商品一覧</a></li>
-        </ul>
-      </div>
-    </nav>
 
   </div>
 
@@ -164,17 +102,11 @@
 <script type="text/javascript">
 $(document).ready(function(){
   $('.sidenav').sidenav();
-  $('.slider').slider({height:300, interval:2000});
 });
 
 var app = new Vue({
   el: '#app',
   data: {
-    captions: [
-      {src:'../imgs/sample_01.jpg', class:'caption center-align', main:'メインキャプション', sub: 'サブキャプション' },
-      {src:'../imgs/sample_02.jpg', class:'caption left-align',   main:'メインキャプション', sub: 'サブキャプション' },
-      {src:'../imgs/sample_01.jpg', class:'caption right-align',  main:'メインキャプション', sub: 'サブキャプション' }
-    ]
   },
   methods: {
     fnc_methods: function(){

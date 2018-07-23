@@ -5,22 +5,40 @@ h2, h3, h4, h5, h6 {
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", YuGothic, "ヒラギノ角ゴ ProN W3", Hiragino Kaku Gothic ProN, Arial, "メイリオ", Meiryo, sans-serif;
   font-size: 17px;
-  display: flex;
-  min-height: 100vh;
-  flex-direction: column;
-}
-
-main {
-  flex: 1 0 auto;
 }
 
 .btn {
   margin: 5px 5px 5px 5px;
 }
 
-.fixed-bottom {
+.fixed-top {
+  /*
   position: fixed;
-  bottom: 0;
+  top: 256px;
   z-index: 10;
+  */
 }
+
+.nav-ul {
+  /*
+  text-align: center;
+  */
+}
+
+.nav-ul-li {
+  /*
+  display: inline-block;
+  */
+}
+
+header {
+  /*
+  margin-bottom: 64px;
+  */
+}
+
+main {
+  /*flex: 1 0 auto;*/
+}
+
 
