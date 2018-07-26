@@ -1,0 +1,63 @@
+* {
+  /*border:solid 1px;*/
+}
+
+.box {
+  border: solid 1px;
+  border-color: black;
+  color: black;
+}
+
+img {
+  width: 100%;
+}
+
+.col2-img {
+  height: 200px;
+}
+
+.col3-img {
+  height: 150px;
+}
+
+.col4-img {
+  height: 100px;
+}
+
+.col6-img {
+  height: 100px;
+}
+
+header {
+  text-align: center;
+}
+
+.header-img {
+  text-align: center;
+}
+
+.header-img-l {
+  width: 800px;
+  height: 240px;
+}
+
+.header-img-m {
+  width: 400px;
+  height: 100px;
+}
+
+.card-title {
+  font-weight: bold;
+}
+
+
+.list-box {
+  border: solid 1px;
+  border-color: black;
+  color: black;
+}
+
+.list-box-img {
+  width: 64px;
+  height: 64px;
+}

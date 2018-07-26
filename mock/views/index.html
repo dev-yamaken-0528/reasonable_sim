@@ -3,107 +3,139 @@
 <head>
   <meta charset="UTF-8">
   <title>格安SIM</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <link rel="stylesheet" href="../css/mini-default.min.css">
+  <link rel="stylesheet" href="../css/web-grid.css">
   <link rel="stylesheet" href="../css/common.css">
+  <link rel="stylesheet" href="../css/index.css">
 </head>
-<body class="grey lighten-5">
-
+<body>
   <div id="app">
 
-    <!-- ヘッダ -->
-    <header>
-      <div>
-        <img src="../imgs/sample_01.jpg" width="100%" height="256px" alt="">
-      </div>
-    </header>
-
-    <!-- ナビ デスクトップ -->
-    <nav class="fixed-top">
-      <div class="nav-wrapper">
-        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-        <ul class="show-on-large">
-          <li class="nav-ul-li"><a href="items.html">ドコモ</a></li>
-          <li class="nav-ul-li"><a href="items.html">au</a></li>
-          <li class="nav-ul-li"><a href="items.html">ソフトバンク</a></li>
-          <li class="nav-ul-li"><a href="items.html">LINEモバイル</a></li>
-          <li class="nav-ul-li"><a href="items.html">ワイモバイル</a></li>
-          <li class="nav-ul-li"><a href="items.html">UQ mobile</a></li>
-          <li class="nav-ul-li"><a href="items.html">U-mobile</a></li>
-          <li class="nav-ul-li"><a href="items.html">IIJmio</a></li>
-          <li class="nav-ul-li"><a href="items.html">mineo</a></li>
-          <li class="nav-ul-li"><a href="items.html">nuroモバイル</a></li>
-          <li class="nav-ul-li"><a href="items.html">BIGLOBE</a></li>
-          <li class="nav-ul-li"><a href="items.html">NifMo</a></li>
-          <li class="nav-ul-li"><a href="items.html">b-mobile</a></li>
-          <li class="nav-ul-li"><a href="items.html">OCN モバイル ONE</a></li>
-        </ul>
-        <ul class="hide-on-large-only">
-          <li class="nav-ul-li"><a href="items.html">ドコモ</a></li>
-          <li class="nav-ul-li"><a href="items.html">au</a></li>
-          <li class="nav-ul-li"><a href="items.html">ソフトバンク</a></li>
-        </ul>
-      </div>
-    </nav>
-    <!-- ナビ スマホ -->
-    <ul class="sidenav" id="mobile-demo">
-      <li class="nav-ul-li"><a href="items.html">ドコモ</a></li>
-      <li class="nav-ul-li"><a href="items.html">au</a></li>
-      <li class="nav-ul-li"><a href="items.html">ソフトバンク</a></li>
-      <li class="nav-ul-li"><a href="items.html">LINEモバイル</a></li>
-      <li class="nav-ul-li"><a href="items.html">ワイモバイル</a></li>
-      <li class="nav-ul-li"><a href="items.html">UQ mobile</a></li>
-      <li class="nav-ul-li"><a href="items.html">U-mobile</a></li>
-      <li class="nav-ul-li"><a href="items.html">IIJmio</a></li>
-      <li class="nav-ul-li"><a href="items.html">mineo</a></li>
-      <li class="nav-ul-li"><a href="items.html">nuroモバイル</a></li>
-      <li class="nav-ul-li"><a href="items.html">BIGLOBE</a></li>
-      <li class="nav-ul-li"><a href="items.html">NifMo</a></li>
-      <li class="nav-ul-li"><a href="items.html">b-mobile</a></li>
-      <li class="nav-ul-li"><a href="items.html">OCN モバイル ONE</a></li>
-    </ul>
-
-
-    <!-- コンテンツ -->
-    <main>
-      <div class="container">
-        <div class="row">
-          <!-- コンテンツ メイン 左 -->
-          <div class="col s12 m8 l9">
-            <p v-for="n in 30">XXXXXXXXXX</p>
+    <!-- ヘッダイメージ -->
+    <div class="container header-img">
+      <div class="r">
+        <div class="c-6">
+          <img src="../imgs/no_img.jpg" class="header-img-l">
+        </div>
+        <div class="c-6">
+          <div>
+            <img src="../imgs/no_img.jpg" class="header-img-m">
+            <img src="../imgs/no_img.jpg" class="header-img-m">
           </div>
-          <!-- コンテンツ サブ 右 -->
-          <div class="col s12 m4 l3">
+          <div>
+            <img src="../imgs/no_img.jpg" class="header-img-m">
+            <img src="../imgs/no_img.jpg" class="header-img-m">
           </div>
         </div>
+      </div>
+    </div>
+
+    <!-- 固定ヘッダ -->
+    <header class="sticky">
+      <a class="log" href="index.html">格安SIM</a>
+      <a class="button" href="items.html">docomo</a>
+      <a class="button" href="items.html">au</a>
+      <a class="button" href="items.html">SoftBank</a>
+    </header>
+
+    <!-- コンテンツ -->
+    <main class="container">
+      <div class="r">
+        <div class="c-2"></div>
+        <!-- 左 -->
+        <div class="c-6">
+          <h1>H1 XXXXX</h1>
+          <h2>H2 MAIN PANEL</h2>
+
+          <!-- 2 card -->
+          <div class="r">
+            <div v-for="n in 2" class="c-6">
+              <a href="item.html">
+                <div class="box">
+                  <img src="../imgs/no_img.jpg" class="col2-img">
+                  <p class="card-title">タイトル</p>
+                  <p>あいうえおかきくけこさしすせそたちつてとあいうえおかきくけこさしすせそたちつてと</p>
+                  <p>あいうえおかきくけこさしすせそたちつてとあいうえおかきくけこさしすせそたちつてと</p>
+                  <p>yyyy/mm/dd</p>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <!-- 3 card -->
+          <div class="r">
+            <div v-for="n in 3" class="c-4">
+              <div class="box">
+                <img src="../imgs/no_img.jpg" class="col3-img">
+                <p>あいうえおかきくけこさしすせそたちつてとあいうえおかきくけこさしすせそたちつてと</p>
+                <p>あいうえおかきくけこさしすせそたちつてとあいうえおかきくけこさしすせそたちつてと</p>
+                <p>yyyy/mm/dd</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- 4 card -->
+          <div class="r">
+            <div v-for="n in 4" class="c-3">
+              <div class="box">
+                <img src="../imgs/no_img.jpg" class="col4-img">
+                <p>あいうえおかきくけこさしすせそたちつてとあいうえおかきくけこさしすせそたちつてと</p>
+                <p>yyyy/mm/dd</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- 6 card -->
+          <div class="r">
+            <div v-for="n in 6" class="c-2">
+              <div class="box">
+                <img src="../imgs/no_img.jpg" class="col6-img">
+                <p>あいうえおかきくけこさしすせそたちつてと</p>
+                <p>yyyy/mm/dd</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <!-- 右 -->
+        <div class="c-2">
+          <h2>H2 SUB PANEL</h2>
+          <h2>新着</h2>
+          <ul>
+            <li v-for="n in 10">
+              <a href="item.html">
+                <div class="list-box">
+                  <img src="../imgs/no_img.jpg" class="list-box-img">
+                </div>
+              </a>
+            </li>
+          </ul>
+          <h2>人気記事ランキング</h2>
+          <ul>
+            <li v-for="n in 10">あいうえおかきくけこ</li>
+          </ul>
+          <h2>Twitter</h2>
+        </div>
+        <div class="c-2"></div>
       </div>
     </main>
 
     <!-- フッタ -->
-    <footer>
-      <div class="container">
-        <div class="page-footer grey darken-4">
-          <div class="row">
-            <div class="col l6 s12">
-              <p class="grey-text text-lighten-4">&copy; 2018 格安SIM</p>
-            </div>
-          </div>
+    <footer class="container">
+      <div class="r">
+        <div class="c-1"></div>
+        <div class="c-10">
+          <p>&copy; 2018 格安SIM</p>
         </div>
       </div>
+        <div class="c-1"></div>
     </footer>
 
   </div>
-
 </body>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
 <script type="text/javascript">
-$(document).ready(function(){
-  $('.sidenav').sidenav();
-});
-
 var app = new Vue({
   el: '#app',
   data: {
@@ -119,6 +151,5 @@ var app = new Vue({
     }
   }
 })
-
 </script>
 </html>

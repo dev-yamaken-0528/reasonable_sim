@@ -7,38 +7,3 @@ body {
   font-size: 17px;
 }
 
-.btn {
-  margin: 5px 5px 5px 5px;
-}
-
-.fixed-top {
-  /*
-  position: fixed;
-  top: 256px;
-  z-index: 10;
-  */
-}
-
-.nav-ul {
-  /*
-  text-align: center;
-  */
-}
-
-.nav-ul-li {
-  /*
-  display: inline-block;
-  */
-}
-
-header {
-  /*
-  margin-bottom: 64px;
-  */
-}
-
-main {
-  /*flex: 1 0 auto;*/
-}
-
-
