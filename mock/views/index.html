@@ -15,19 +15,17 @@
     <!-- ヘッダイメージ -->
     <div class="container header-img">
       <div class="r">
-        <div class="c-6">
+        <div class="c-2"></div>
+        <div class="c-4">
           <img src="../imgs/no_img.jpg" class="header-img-l">
         </div>
-        <div class="c-6">
-          <div>
-            <img src="../imgs/no_img.jpg" class="header-img-m">
-            <img src="../imgs/no_img.jpg" class="header-img-m">
-          </div>
+        <div class="c-4">
           <div>
             <img src="../imgs/no_img.jpg" class="header-img-m">
             <img src="../imgs/no_img.jpg" class="header-img-m">
           </div>
         </div>
+        <div class="c-2"></div>
       </div>
     </div>
 
@@ -45,79 +43,80 @@
         <div class="c-2"></div>
         <!-- 左 -->
         <div class="c-6">
-          <h1>H1 XXXXX</h1>
-          <h2>H2 MAIN PANEL</h2>
-
-          <!-- 2 card -->
+          <h1>格安SIM</h1>
+          <!-- 2 box -->
           <div class="r">
             <div v-for="n in 2" class="c-6">
               <a href="item.html">
                 <div class="box">
                   <img src="../imgs/no_img.jpg" class="col2-img">
-                  <p class="card-title">タイトル</p>
-                  <p>あいうえおかきくけこさしすせそたちつてとあいうえおかきくけこさしすせそたちつてと</p>
-                  <p>あいうえおかきくけこさしすせそたちつてとあいうえおかきくけこさしすせそたちつてと</p>
-                  <p>yyyy/mm/dd</p>
+                  <p>ああああああああああいいいいいいいいいいううううううううううええええええええええおおおおおおおおおお</p>
+                  <p class="box-ymd">yyyy/mm/dd</p>
                 </div>
               </a>
             </div>
           </div>
-
-          <!-- 3 card -->
+          <!-- 3 box -->
           <div class="r">
             <div v-for="n in 3" class="c-4">
-              <div class="box">
-                <img src="../imgs/no_img.jpg" class="col3-img">
-                <p>あいうえおかきくけこさしすせそたちつてとあいうえおかきくけこさしすせそたちつてと</p>
-                <p>あいうえおかきくけこさしすせそたちつてとあいうえおかきくけこさしすせそたちつてと</p>
-                <p>yyyy/mm/dd</p>
-              </div>
-            </div>
-          </div>
-
-          <!-- 4 card -->
-          <div class="r">
-            <div v-for="n in 4" class="c-3">
-              <div class="box">
-                <img src="../imgs/no_img.jpg" class="col4-img">
-                <p>あいうえおかきくけこさしすせそたちつてとあいうえおかきくけこさしすせそたちつてと</p>
-                <p>yyyy/mm/dd</p>
-              </div>
-            </div>
-          </div>
-
-          <!-- 6 card -->
-          <div class="r">
-            <div v-for="n in 6" class="c-2">
-              <div class="box">
-                <img src="../imgs/no_img.jpg" class="col6-img">
-                <p>あいうえおかきくけこさしすせそたちつてと</p>
-                <p>yyyy/mm/dd</p>
-              </div>
-            </div>
-          </div>
-
-        </div>
-        <!-- 右 -->
-        <div class="c-2">
-          <h2>H2 SUB PANEL</h2>
-          <h2>新着</h2>
-          <ul>
-            <li v-for="n in 10">
               <a href="item.html">
-                <div class="list-box">
-                  <img src="../imgs/no_img.jpg" class="list-box-img">
+                <div class="box">
+                  <img src="../imgs/no_img.jpg" class="col3-img">
+                  <p>ああああああああああいいいいいいいいいいううううううううううええええええええええ</p>
+                  <p class="box-ymd">yyyy/mm/dd</p>
                 </div>
               </a>
-            </li>
-          </ul>
-          <h2>人気記事ランキング</h2>
-          <ul>
-            <li v-for="n in 10">あいうえおかきくけこ</li>
-          </ul>
-          <h2>Twitter</h2>
+            </div>
+          </div>
+          <!-- 4 box -->
+          <div class="r">
+            <div v-for="n in 4" class="c-3">
+              <a href="item.html">
+                <div class="box">
+                  <img src="../imgs/no_img.jpg" class="col4-img">
+                  <p>ああああああああああいいいいいいいいいいううううううううううええええええええええ</p>
+                  <p class="box-ymd">yyyy/mm/dd</p>
+                </div>
+              </a>
+            </div>
+          </div>
+          <!-- 6 box -->
+          <div class="r">
+            <div v-for="n in 6" class="c-2">
+              <a href="item.html">
+                <div class="box">
+                  <img src="../imgs/no_img.jpg" class="col6-img">
+                  <p>ああああああああああいいいいいいいいいい</p>
+                  <p class="box-ymd">yyyy/mm/dd</p>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 右 -->
+        <div class="c-2">
+          <h2>新着</h2>
+          <div v-for="n in 5">
+            <a href="item.html">
+              <div class="list-box">
+                <img src="../imgs/no_img.jpg" class="list-box-img">
+                <p>ああああああああああいいいいいいいいいい</p>
+              </div>
+            </a>
+          </div>
+          <h2>人気</h2>
+          <div v-for="n in 5">
+            <a href="item.html">
+              <div class="list-box">
+                <img src="../imgs/no_img.jpg" class="list-box-img">
+                <p>ああああああああああいいいいいいいいいい</p>
+              </div>
+            </a>
+          </div>
         </div>
         <div class="c-2"></div>
+
       </div>
     </main>
 
