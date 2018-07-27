@@ -31,7 +31,10 @@ header {
 }
 
 .header-img {
+  /*
   text-align: center;
+  */
+  height: 400px;
 }
 
 .header-img-l {
@@ -45,32 +48,34 @@ header {
 }
 
 .box {
-  /*
   border: solid 1px;
   border-color: black;
-  */
   color: black;
+  /*
   background-color: white;
+  */
 }
 
-.box-title {
+.box-content {
   font-weight: bold;
 }
 
 .box-ymd {
   color: grey;
+  text-align: right;
+  padding: 5px 5px 5px 5px;
 }
 
 .list-box {
-  /*
   border: solid 1px;
   border-color: black;
-  */
   color: black;
   height: 64px;
   margin: 5px 5px 5px 5px;
-  background-color: white;
   display: flex;
+  /*
+  background-color: white;
+  */
 }
 
 .list-box-img {

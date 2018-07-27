@@ -13,6 +13,11 @@
   <div id="app">
 
     <!-- ヘッダイメージ -->
+    <div class="container">
+      <img src="../imgs/gifsample.gif" class="header-img">
+    </div>
+
+    <!--
     <div class="container header-img">
       <div class="r">
         <div class="c-2"></div>
@@ -28,13 +33,11 @@
         <div class="c-2"></div>
       </div>
     </div>
+    -->
 
     <!-- 固定ヘッダ -->
     <header class="sticky">
-      <a class="log" href="index.html">格安SIM</a>
-      <a class="button" href="items.html">docomo</a>
-      <a class="button" href="items.html">au</a>
-      <a class="button" href="items.html">SoftBank</a>
+      <a v-for="n in 10" class="button" href="items.html">あああああ</a>
     </header>
 
     <!-- コンテンツ -->
@@ -43,14 +46,13 @@
         <div class="c-2"></div>
         <!-- 左 -->
         <div class="c-6">
-          <h1>格安SIM</h1>
           <!-- 2 box -->
           <div class="r">
             <div v-for="n in 2" class="c-6">
               <a href="item.html">
                 <div class="box">
                   <img src="../imgs/no_img.jpg" class="col2-img">
-                  <p>ああああああああああいいいいいいいいいいううううううううううええええええええええおおおおおおおおおお</p>
+                  <p class="box-content">ああああああああああいいいいいいいいいいううううううううううええええええええええおおおおおおおおおお</p>
                   <p class="box-ymd">yyyy/mm/dd</p>
                 </div>
               </a>
@@ -62,7 +64,7 @@
               <a href="item.html">
                 <div class="box">
                   <img src="../imgs/no_img.jpg" class="col3-img">
-                  <p>ああああああああああいいいいいいいいいいううううううううううええええええええええ</p>
+                  <p class="box-content">ああああああああああいいいいいいいいいいううううううううううええええええええええ</p>
                   <p class="box-ymd">yyyy/mm/dd</p>
                 </div>
               </a>
@@ -74,7 +76,7 @@
               <a href="item.html">
                 <div class="box">
                   <img src="../imgs/no_img.jpg" class="col4-img">
-                  <p>ああああああああああいいいいいいいいいいううううううううううええええええええええ</p>
+                  <p class="box-content">ああああああああああいいいいいいいいいいううううううううううええええええええええ</p>
                   <p class="box-ymd">yyyy/mm/dd</p>
                 </div>
               </a>
@@ -86,7 +88,7 @@
               <a href="item.html">
                 <div class="box">
                   <img src="../imgs/no_img.jpg" class="col6-img">
-                  <p>ああああああああああいいいいいいいいいい</p>
+                  <p class="box-content">ああああああああああいいいいいいいいいい</p>
                   <p class="box-ymd">yyyy/mm/dd</p>
                 </div>
               </a>
