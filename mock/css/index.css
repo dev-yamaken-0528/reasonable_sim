@@ -48,8 +48,10 @@ header {
 }
 
 .box {
+  /*
   border: solid 1px;
   border-color: black;
+  */
   color: black;
   /*
   background-color: white;
@@ -57,7 +59,7 @@ header {
 }
 
 .box-content {
-  font-weight: bold;
+  /* font-weight: bold; */
 }
 
 .box-ymd {
@@ -80,5 +82,5 @@ header {
 
 .list-box-img {
   width: 64px;
-  height: 64px;
+  /* height: 64px; */
 }

@@ -4,7 +4,11 @@
   <meta charset="UTF-8">
   <title>格安SIM</title>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+  <!--
   <link rel="stylesheet" href="../css/mini-default.min.css">
+  -->
   <link rel="stylesheet" href="../css/web-grid.css">
   <link rel="stylesheet" href="../css/common.css">
   <link rel="stylesheet" href="../css/index.css">
@@ -13,10 +17,11 @@
   <div id="app">
 
     <!-- ヘッダイメージ -->
+    <!--
     <div class="container">
       <img src="../imgs/gifsample.gif" class="header-img">
     </div>
-
+    -->
     <!--
     <div class="container header-img">
       <div class="r">
@@ -36,16 +41,31 @@
     -->
 
     <!-- 固定ヘッダ -->
+    <!--
     <header class="sticky">
       <a v-for="n in 10" class="button" href="items.html">あああああ</a>
+    </header>
+    -->
+
+    <header>
+      <div class="navbar-fixed">
+    <nav>
+      <div class="nav-wrapper">
+        <a href="#!" class="brand-logo">Logo</a>
+        <ul class="right hide-on-med-and-down">
+          <li><a href="sass.html">Sass</a></li>
+          <li><a href="badges.html">Components</a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
     </header>
 
     <!-- コンテンツ -->
     <main class="container">
       <div class="r">
-        <div class="c-2"></div>
         <!-- 左 -->
-        <div class="c-6">
+        <div class="c-8">
           <!-- 2 box -->
           <div class="r">
             <div v-for="n in 2" class="c-6">
@@ -97,7 +117,7 @@
         </div>
 
         <!-- 右 -->
-        <div class="c-2">
+        <div class="c-4">
           <h2>新着</h2>
           <div v-for="n in 5">
             <a href="item.html">
@@ -117,7 +137,6 @@
             </a>
           </div>
         </div>
-        <div class="c-2"></div>
 
       </div>
     </main>
@@ -135,6 +154,8 @@
 
   </div>
 </body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> 
+<script type="text/javascript" src="js/materialize.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
 <script type="text/javascript">
 var app = new Vue({
