@@ -7,15 +7,3 @@ body {
   font-size: 17px;
 }
 
-header.sticky {
- position:-webkit-sticky;
- position:sticky;
- z-index:1101;
- top:0
-}
-footer.sticky {
- position:-webkit-sticky;
- position:sticky;
- z-index:1101;
- bottom:0
-}

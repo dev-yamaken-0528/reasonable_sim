@@ -5,10 +5,7 @@
   <title>格安SIM</title>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
-  <!--
-  <link rel="stylesheet" href="../css/mini-default.min.css">
-  -->
+  <link rel="stylesheet" href="../css/materialize.min.css">
   <link rel="stylesheet" href="../css/web-grid.css">
   <link rel="stylesheet" href="../css/common.css">
   <link rel="stylesheet" href="../css/index.css">
@@ -40,25 +37,58 @@
     </div>
     -->
 
-    <!-- 固定ヘッダ -->
-    <!--
-    <header class="sticky">
-      <a v-for="n in 10" class="button" href="items.html">あああああ</a>
-    </header>
-    -->
+    <!-- ヘッダイメージ -->
+    <div>
+      <img src="../imgs/gifsample.gif" class="header-img">
+    </div>
 
-    <header>
-      <div class="navbar-fixed">
-    <nav>
-      <div class="nav-wrapper">
-        <a href="#!" class="brand-logo">Logo</a>
-        <ul class="right hide-on-med-and-down">
-          <li><a href="sass.html">Sass</a></li>
-          <li><a href="badges.html">Components</a></li>
-        </ul>
-      </div>
-    </nav>
-  </div>
+    <!-- 固定ヘッダ -->
+    <header class="sticky-header">
+      <nav class="black">
+        <div class="nav-wrapper">
+          <a href="./index.html" class="brand-logo hide-on-med-and-down">格安SIM</a>
+          <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+          <ul class="right hide-on-med-and-down">
+            <li><a href="./items.html">ドコモ</a></li>
+            <li><a href="./items.html">au</a></li>
+            <li><a href="./items.html">SoftBank</a></li>
+            <li><a href="./items.html">ワイモバイル</a></li>
+            <li><a href="./items.html">UQ mobile</a></li>
+            <li><a href="./items.html">U-mobile</a></li>
+            <li><a href="./items.html">IIJmio</a></li>
+            <li><a href="./items.html">mineo</a></li>
+            <li><a href="./items.html">nuroモバイル</a></li>
+            <li><a href="./items.html">BIGLOBE</a></li>
+            <li><a href="./items.html">NifMo</a></li>
+            <li><a href="./items.html">b-mobile</a></li>
+            <li><a href="./items.html">OCN モバイル ONE</a></li>
+            <li><a href="./items.html">楽天モバイル</a></li>
+            <li><a href="./items.html">エキサイトモバイル</a></li>
+          </ul>
+          <ul class="right hide-on-large-only">
+            <li><a href="./items.html">ドコモ</a></li>
+            <li><a href="./items.html">au</a></li>
+            <li><a href="./items.html">SoftBank</a></li>
+          </ul>
+        </div>
+      </nav>
+      <ul class="sidenav" id="mobile-demo">
+        <li><a href="./items.html">ドコモ</a></li>
+        <li><a href="./items.html">au</a></li>
+        <li><a href="./items.html">ソフトバンク</a></li>
+        <li><a href="./items.html">ワイモバイル</a></li>
+        <li><a href="./items.html">UQ mobile</a></li>
+        <li><a href="./items.html">U-mobile</a></li>
+        <li><a href="./items.html">IIJmio</a></li>
+        <li><a href="./items.html">mineo</a></li>
+        <li><a href="./items.html">nuroモバイル</a></li>
+        <li><a href="./items.html">BIGLOBE</a></li>
+        <li><a href="./items.html">NifMo</a></li>
+        <li><a href="./items.html">b-mobile</a></li>
+        <li><a href="./items.html">OCN モバイル ONE</a></li>
+        <li><a href="./items.html">楽天モバイル</a></li>
+        <li><a href="./items.html">エキサイトモバイル</a></li>
+      </ul>
     </header>
 
     <!-- コンテンツ -->
@@ -70,7 +100,7 @@
           <div class="r">
             <div v-for="n in 2" class="c-6">
               <a href="item.html">
-                <div class="box">
+                <div class="box z-depth-1">
                   <img src="../imgs/no_img.jpg" class="col2-img">
                   <p class="box-content">ああああああああああいいいいいいいいいいううううううううううええええええええええおおおおおおおおおお</p>
                   <p class="box-ymd">yyyy/mm/dd</p>
@@ -82,7 +112,7 @@
           <div class="r">
             <div v-for="n in 3" class="c-4">
               <a href="item.html">
-                <div class="box">
+                <div class="box z-depth-1">
                   <img src="../imgs/no_img.jpg" class="col3-img">
                   <p class="box-content">ああああああああああいいいいいいいいいいううううううううううええええええええええ</p>
                   <p class="box-ymd">yyyy/mm/dd</p>
@@ -94,7 +124,7 @@
           <div class="r">
             <div v-for="n in 4" class="c-3">
               <a href="item.html">
-                <div class="box">
+                <div class="box z-depth-1">
                   <img src="../imgs/no_img.jpg" class="col4-img">
                   <p class="box-content">ああああああああああいいいいいいいいいいううううううううううええええええええええ</p>
                   <p class="box-ymd">yyyy/mm/dd</p>
@@ -106,7 +136,7 @@
           <div class="r">
             <div v-for="n in 6" class="c-2">
               <a href="item.html">
-                <div class="box">
+                <div class="box z-depth-1">
                   <img src="../imgs/no_img.jpg" class="col6-img">
                   <p class="box-content">ああああああああああいいいいいいいいいい</p>
                   <p class="box-ymd">yyyy/mm/dd</p>
@@ -121,18 +151,18 @@
           <h2>新着</h2>
           <div v-for="n in 5">
             <a href="item.html">
-              <div class="list-box">
+              <div class="list-box z-depth-1">
                 <img src="../imgs/no_img.jpg" class="list-box-img">
-                <p>ああああああああああいいいいいいいいいい</p>
+                <p class="list-box-content">ああああああああああいいいいいいいいいい</p>
               </div>
             </a>
           </div>
           <h2>人気</h2>
           <div v-for="n in 5">
             <a href="item.html">
-              <div class="list-box">
+              <div class="list-box z-depth-1">
                 <img src="../imgs/no_img.jpg" class="list-box-img">
-                <p>ああああああああああいいいいいいいいいい</p>
+                <p class="list-box-content">ああああああああああいいいいいいいいいい</p>
               </div>
             </a>
           </div>
@@ -142,22 +172,29 @@
     </main>
 
     <!-- フッタ -->
-    <footer class="container">
-      <div class="r">
-        <div class="c-1"></div>
-        <div class="c-10">
-          <p>&copy; 2018 格安SIM</p>
+    <footer class="page-footer black">
+      <div class="container">
+        <div class="row">
+          <a href="./index.html" class="white-text">格安SIM</a>
+        </div>
+        <div class="footer-copyright">
+          <div class="container">
+            <p>&copy; 2018 格安SIM</p>
+          </div>
         </div>
       </div>
-        <div class="c-1"></div>
     </footer>
 
   </div>
 </body>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> 
-<script type="text/javascript" src="js/materialize.min.js"></script>
+<script type="text/javascript" src="../js/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="../js/materialize.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
 <script type="text/javascript">
+$(document).ready(function(){
+  $('.sidenav').sidenav();
+});
+
 var app = new Vue({
   el: '#app',
   data: {
