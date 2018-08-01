@@ -26,11 +26,13 @@ header {
   text-align: center;
 }
 
+/*
 .sticky-header {
  position:-webkit-sticky;
  position:sticky;
  top:0
 }
+*/
 
 .header-img {
   height: 400px;
